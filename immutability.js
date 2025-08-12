@@ -3,6 +3,8 @@ let movie = {
   rating: 0,
 };
 
+
+// immutable
 function rateMovieImmutability(movie, rate) {
   const getRate = Object.assign({}, movie, {
     rate,
