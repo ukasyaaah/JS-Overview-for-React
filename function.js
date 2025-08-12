@@ -22,7 +22,6 @@ function kali(x) {
 let kali2 = kali(2);
 kali2(4);
 
-
 //4. Object yg memiliki property
 function contoh() {
   contoh.properti = "Properti Funct";
@@ -31,3 +30,13 @@ function contoh() {
 contoh();
 console.log(contoh);
 console.log(contoh.properti);
+
+// 5. Funct pd properti obj
+const user = {
+  username: "ukasyaaah",
+  sayHello(name) {
+    return `Hello ${name}, from ${this.username}`;
+  },
+};
+
+console.log(user.sayHello("Ari"));
